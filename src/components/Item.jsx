@@ -28,7 +28,7 @@ const Item = ({ items }) => {
                   index > 2 && (
                     <>
                       <article className="text-white flex flex-row gap-3 py-3 hover:underline hover:underline-offset-8 ">
-                        <Icon className="text-white w-4 h-4 " />
+                        <Icon className="text-white w-6 h-6 " />
                         <p className="text-white text-sm ">{name}</p>
                       </article>
                     </>

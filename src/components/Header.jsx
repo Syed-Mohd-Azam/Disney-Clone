@@ -11,7 +11,7 @@ const Header = () => {
       <section className="flex items-center justify-between px-6">
         <article className="flex items-center md:gap-16 gap-5">
           <img
-            className="w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] hover:cursor-pointer"
+            className="w-[80px] h-[80px]  sm:w-[100px] sm:h-[100px] lg:w-[120px] lg:h-[120px] hover:cursor-pointer"
             src={Disney}
             alt="Disney-Image"
           />
@@ -27,7 +27,7 @@ const Header = () => {
         </article>
         <article className="flex items-center justify-center">
           <img
-            className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] rounded-full"
+            className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] rounded-full"
             src={Profile}
             alt="Profile-Image"
           />
