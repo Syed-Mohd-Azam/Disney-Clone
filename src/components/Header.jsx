@@ -9,7 +9,7 @@ const Header = () => {
       <section className="flex items-center justify-between px-6">
         <article className="flex items-center md:gap-10 gap-5">
           <img
-            className="min-w-8 min-h-8 w-[120px] hover:cursor-pointer"
+            className="w-[80px] h-[80px] lg:w-[120px] lg:h-[120px] hover:cursor-pointer"
             src={Disney}
             alt="Disney-Image"
           />
@@ -21,7 +21,7 @@ const Header = () => {
         </article>
         <article>
           <img
-            className="min-w-[5px] min-h-[5px] w-[50px] h-[50px] rounded-full"
+            className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] rounded-full"
             src={Profile}
             alt="Profile-Image"
           />
