@@ -35,7 +35,7 @@ const Trending = () => {
       >
         <article className="hidden lg:block lg:absolute top-1/2 left-4">
           <FaLessThan
-            className="text-black bg-white w-9 h-9 p-2 rounded-md hover:cursor-pointer font-bold z-50"
+            className="text-white w-10 h-10 p-2 rounded-full hover:cursor-pointer font-extrabold z-50"
             style={{ position: "absolute" }}
             onClick={() => scrollLeft(elementRef.current)}
           />
@@ -50,7 +50,7 @@ const Trending = () => {
         ))}
         <article className="hidden lg:block  lg:absolute top-1/2 right-10">
           <FaGreaterThan
-            className="text-black bg-white w-9 h-9 p-2 rounded-md hover:cursor-pointer z-50 font-bold"
+            className="text-white w-10 h-10 p-2 rounded-full hover:cursor-pointer z-50 font-extrabold"
             style={{ position: "absolute" }}
             onClick={() => scrollRight(elementRef.current)}
           />
