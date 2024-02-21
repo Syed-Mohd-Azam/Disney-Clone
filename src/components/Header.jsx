@@ -21,7 +21,7 @@ const Header = () => {
         </article>
         <article>
           <img
-            className="min-w-[5px] min-h-[5px] w-[60px] h-[60px] rounded-full"
+            className="min-w-[5px] min-h-[5px] w-[50px] h-[50px] rounded-full"
             src={Profile}
             alt="Profile-Image"
           />
