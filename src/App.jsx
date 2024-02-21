@@ -1,8 +1,7 @@
-import "./App.css";
 function App() {
   return (
     <>
-      <section></section>
+      <section className="w-full min-h-screen bg-black"></section>
     </>
   );
 }
