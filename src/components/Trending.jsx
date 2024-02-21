@@ -18,11 +18,11 @@ const Trending = () => {
   };
   const scrollLeft = (element) => {
     console.log(element);
-    element.scrollLeft -= screenWidth - 80;
+    element.scrollLeft -= screenWidth - 64;
   };
   const scrollRight = (element) => {
     console.log(element);
-    element.scrollLeft += screenWidth - 80;
+    element.scrollLeft += screenWidth - 64;
   };
   if (movies?.length === 0) {
     return;
@@ -30,27 +30,27 @@ const Trending = () => {
   return (
     <>
       <section
-        className=" w-full flex flex-row px-16 py-5 overflow-hidden  scrollbar-hide scroll-smooth"
+        className=" w-11/12 mx-auto flex flex-row px-16 py-5 overflow-hidden  scrollbar-hide scroll-smooth transition duration-1000 ease-in-out"
         ref={elementRef}
       >
-        <article className="hidden lg:block lg:absolute top-1/2 left-7">
+        <article className="hidden lg:block lg:absolute top-1/2 left-4">
           <FaLessThan
-            className="text-white w-9 h-9 p-2 rounded-md hover:cursor-pointer font-bold"
+            className="text-black bg-white w-9 h-9 p-2 rounded-md hover:cursor-pointer font-bold z-50"
             style={{ position: "absolute" }}
             onClick={() => scrollLeft(elementRef.current)}
           />
         </article>
         {movies?.map((movie) => (
           <img
-            className="min-w-full md:h-[300px] object-fill  mr-12 rounded-lg"
+            className="min-w-1/2 md:h-[300px] object-fill  mr-12 rounded-lg shadow-xl brightness-50 hover:brightness-90 hover:border-2 border-white hover:shadow-xl"
             key={movie?.id}
             src={POSTER_PATH_URL + movie?.backdrop_path}
             alt="Trending-Banner-Image"
           />
         ))}
-        <article className="hidden lg:block  lg:absolute top-1/2 right-14">
+        <article className="hidden lg:block  lg:absolute top-1/2 right-10">
           <FaGreaterThan
-            className="text-white w-9 h-9 p-2 rounded-md hover:cursor-pointer z-50 font-bold"
+            className="text-black bg-white w-9 h-9 p-2 rounded-md hover:cursor-pointer z-50 font-bold"
             style={{ position: "absolute" }}
             onClick={() => scrollRight(elementRef.current)}
           />

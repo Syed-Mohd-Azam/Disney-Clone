@@ -3,7 +3,7 @@ import Trending from "./components/Trending";
 function App() {
   return (
     <>
-      <section className="w-full min-h-screen bg-black">
+      <section className="w-full min-h-screen bg-[#1b2431]">
         <Header />
         <Trending />
       </section>
