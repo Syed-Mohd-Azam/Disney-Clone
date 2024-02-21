@@ -4,6 +4,7 @@ import Disney from "../assets/Disney+_Image.png";
 import itemsList from "../utils/constants";
 import ItemLarge from "./ItemLarge";
 import ItemMedium from "./ItemMedium";
+import Item from "./Item";
 const Header = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Header = () => {
             {itemsList.map((item, index) => (
               <ItemMedium key={index} item={item} />
             ))}
+            {<Item items={itemsList} />}
           </section>
         </article>
         <article className="flex items-center justify-center">
