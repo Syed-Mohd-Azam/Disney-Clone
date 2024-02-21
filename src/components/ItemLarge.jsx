@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-const Item = ({ item: { name, Icon } }) => {
+const ItemLarge = ({ item: { name, Icon } }) => {
   return (
     <>
       <section className="hidden  text-white xl:flex gap-3 items-center hover:cursor-pointer hover:underline hover:underline-offset-8  ">
@@ -9,4 +9,4 @@ const Item = ({ item: { name, Icon } }) => {
     </>
   );
 };
-export default Item;
+export default ItemLarge;
