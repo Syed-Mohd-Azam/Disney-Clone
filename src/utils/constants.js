@@ -31,3 +31,7 @@ const itemsList = [
   },
 ];
 export default itemsList;
+export const API_KEY = "15f1925c1cc294aea0d2a293f918c656";
+export const TRENDING_API =
+  "https://api.themoviedb.org/3/trending/movie/week?api_key=" + API_KEY;
+export const POSTER_PATH_URL = "https://image.tmdb.org/t/p/w500/";
