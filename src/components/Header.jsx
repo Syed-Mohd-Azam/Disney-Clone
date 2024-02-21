@@ -13,7 +13,7 @@ const Header = () => {
             src={Disney}
             alt="Disney-Image"
           />
-          <section className="flex gap-3  md:gap-8 items-center mt-5">
+          <section className="flex gap-8 items-center mt-5">
             {itemsList.map((item, index) => (
               <Item key={index} item={item} />
             ))}
