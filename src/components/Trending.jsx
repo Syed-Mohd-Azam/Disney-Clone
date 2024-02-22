@@ -9,7 +9,7 @@ const Trending = () => {
   useEffect(() => {
     trendingMovies();
   }, []);
-  const screenWidth = window.screen.width;
+  const screenWidth = window.innerWidth;
   const trendingMovies = async () => {
     const moviesData = await fetch(TRENDING_API);
     const jsonData = await moviesData.json();
@@ -18,11 +18,11 @@ const Trending = () => {
   };
   const scrollLeft = (element) => {
     console.log(element);
-    element.scrollLeft -= (10 / 12) * screenWidth;
+    element.scrollLeft -= (11 / 13) * screenWidth;
   };
   const scrollRight = (element) => {
     console.log(element);
-    element.scrollLeft += (10 / 12) * screenWidth;
+    element.scrollLeft += (11 / 13) * screenWidth;
   };
   if (movies?.length === 0) {
     return;
