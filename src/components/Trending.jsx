@@ -18,18 +18,18 @@ const Trending = () => {
   };
   const scrollLeft = (element) => {
     console.log(element);
-    element.scrollLeft -= (11 / 12) * screenWidth - 90;
+    element.scrollLeft -= (10 / 12) * screenWidth;
   };
   const scrollRight = (element) => {
     console.log(element);
-    element.scrollLeft += (11 / 12) * screenWidth - 90;
+    element.scrollLeft += (10 / 12) * screenWidth;
   };
   if (movies?.length === 0) {
     return;
   }
   return (
     <>
-      <section className=" w-11/12 mx-auto relative">
+      <section className=" w-10/12 mx-auto relative my-10">
         <article className="hidden lg:block lg:absolute top-1/2 left-4">
           <FaLessThan
             className="text-white w-10 h-10 p-2 rounded-full hover:cursor-pointer font-extrabold z-50"
@@ -38,7 +38,7 @@ const Trending = () => {
           />
         </article>
         <section
-          className="flex flex-row px-16 py-5 overflow-hidden  scrollbar-hide scroll-smooth transition duration-1000 ease-in-out gap-9"
+          className="flex flex-row w-full overflow-hidden  scrollbar-hide scroll-smooth transition-all duration-300 ease-in-out gap-7"
           ref={elementRef}
         >
           {movies?.map((movie) => (
@@ -50,7 +50,7 @@ const Trending = () => {
             />
           ))}
         </section>
-        <article className="hidden lg:block  lg:absolute top-1/2 right-10">
+        <article className="hidden lg:block  lg:absolute top-1/2 right-12">
           <FaGreaterThan
             className="text-white w-10 h-10 p-2 rounded-full hover:cursor-pointer z-50 font-extrabold"
             style={{ position: "absolute" }}
