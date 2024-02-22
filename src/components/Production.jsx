@@ -9,6 +9,7 @@ const Production = ({ img, video }) => {
           loop
           autoPlay
           playsInline
+          muted
           className="absolute top-0 left-0 rounded-lg opacity-0 hover:opacity-50"
         />
         <img src={img} alt="Production-House-Image" />
