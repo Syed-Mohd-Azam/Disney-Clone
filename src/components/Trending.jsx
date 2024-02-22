@@ -9,7 +9,7 @@ const Trending = () => {
   useEffect(() => {
     trendingMovies();
   }, []);
-  const screenWidth = window.innerWidth;
+  const screenWidth = window.screen.width;
   const trendingMovies = async () => {
     const moviesData = await fetch(TRENDING_API);
     const jsonData = await moviesData.json();
@@ -18,21 +18,18 @@ const Trending = () => {
   };
   const scrollLeft = (element) => {
     console.log(element);
-    element.scrollLeft -= screenWidth - 64;
+    element.scrollLeft -= (11 / 12) * screenWidth - 90;
   };
   const scrollRight = (element) => {
     console.log(element);
-    element.scrollLeft += screenWidth - 64;
+    element.scrollLeft += (11 / 12) * screenWidth - 90;
   };
   if (movies?.length === 0) {
     return;
   }
   return (
     <>
-      <section
-        className=" w-11/12 mx-auto flex flex-row px-16 py-5 overflow-hidden  scrollbar-hide scroll-smooth transition duration-1000 ease-in-out"
-        ref={elementRef}
-      >
+      <section className=" w-11/12 mx-auto relative">
         <article className="hidden lg:block lg:absolute top-1/2 left-4">
           <FaLessThan
             className="text-white w-10 h-10 p-2 rounded-full hover:cursor-pointer font-extrabold z-50"
@@ -40,14 +37,19 @@ const Trending = () => {
             onClick={() => scrollLeft(elementRef.current)}
           />
         </article>
-        {movies?.map((movie) => (
-          <img
-            className="min-w-1/2 md:h-[300px] object-fill  mr-12 rounded-lg shadow-xl brightness-50 hover:brightness-90 hover:border-2 border-white hover:shadow-xl"
-            key={movie?.id}
-            src={POSTER_PATH_URL + movie?.backdrop_path}
-            alt="Trending-Banner-Image"
-          />
-        ))}
+        <section
+          className="flex flex-row px-16 py-5 overflow-hidden  scrollbar-hide scroll-smooth transition duration-1000 ease-in-out gap-9"
+          ref={elementRef}
+        >
+          {movies?.map((movie) => (
+            <img
+              className="min-w-full md:h-[300px] object-fill  rounded-lg shadow-xl brightness-50 hover:brightness-90 hover:border-2 border-white hover:shadow-xl bg-blend-darken"
+              key={movie?.id}
+              src={POSTER_PATH_URL + movie?.backdrop_path}
+              alt="Trending-Banner-Image"
+            />
+          ))}
+        </section>
         <article className="hidden lg:block  lg:absolute top-1/2 right-10">
           <FaGreaterThan
             className="text-white w-10 h-10 p-2 rounded-full hover:cursor-pointer z-50 font-extrabold"
