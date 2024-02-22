@@ -43,7 +43,7 @@ const Trending = () => {
         >
           {movies?.map((movie) => (
             <img
-              className="min-w-full md:h-[300px] object-fill  rounded-lg shadow-xl brightness-50 hover:brightness-90 hover:border-2 border-white hover:shadow-xl bg-blend-darken"
+              className="min-w-full md:h-[300px]  object-fill  rounded-lg shadow-xl brightness-50 hover:brightness-90 hover:border-2 border-white hover:shadow-xl bg-blend-darken"
               key={movie?.id}
               src={POSTER_PATH_URL + movie?.backdrop_path}
               alt="Trending-Banner-Image"
