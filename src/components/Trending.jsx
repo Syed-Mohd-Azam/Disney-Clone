@@ -29,7 +29,7 @@ const Trending = () => {
   }
   return (
     <>
-      <section className=" w-10/12 mx-auto relative my-10">
+      <section className=" w-10/12 mx-auto relative my-10 ">
         <article className="hidden lg:block lg:absolute top-1/2 left-4">
           <FaLessThan
             className="text-white w-10 h-10 p-2 rounded-full hover:cursor-pointer font-extrabold z-50"
@@ -38,12 +38,12 @@ const Trending = () => {
           />
         </article>
         <section
-          className="flex flex-row w-full overflow-hidden  scrollbar-hide scroll-smooth transition-all duration-300 ease-in-out gap-7"
+          className="flex flex-row w-full overflow-hidden  scrollbar-hide scroll-smooth transition-all duration-300 ease-in-out gap-7 rounded-xl "
           ref={elementRef}
         >
           {movies?.map((movie) => (
             <img
-              className="min-w-full md:h-[300px]  object-fill  rounded-lg shadow-xl brightness-50 hover:brightness-90 hover:border-2 border-white hover:shadow-xl bg-blend-darken"
+              className="min-w-full md:h-[300px]  object-fill  rounded-xl shadow-xl brightness-50 hover:brightness-90 hover:shadow-xl bg-blend-darken "
               key={movie?.id}
               src={POSTER_PATH_URL + movie?.backdrop_path}
               alt="Trending-Banner-Image"
