@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import Profile from "../assets/Profile-Image.png";
-import Disney from "../assets/Disney.png";
+import Disney from "../assets/Disney+_Image.png";
 import itemsList from "../utils/constants";
 import ItemLarge from "./ItemLarge";
 import ItemMedium from "./ItemMedium";
