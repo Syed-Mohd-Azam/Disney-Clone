@@ -43,3 +43,5 @@ To enable data fetching from TMDb, obtain an API key:
 - Visit TMDb and create an account.
 - Navigate to your account settings and create a new API application.
 - Copy the API key and replace the placeholder in the project.
+### Project Link
+Project Link : https://vermillion-tapioca-211c42.netlify.app/
