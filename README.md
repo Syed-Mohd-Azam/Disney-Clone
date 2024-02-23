@@ -6,10 +6,10 @@ Film Explorer is a web application built using Vite and React that allows users 
 
 ### Key Features:
 
-Dynamic Poster Display: View an extensive collection of film and TV show posters.
-Detailed Information: Access detailed information about each film or TV show, including ratings, release dates, and overviews.
-Smooth Navigation: Seamlessly scroll through the vast library of content with smooth transitions.
-Responsive Design: Enjoy a consistent user experience across different devices.
+- Dynamic Poster Display: View an extensive collection of film and TV show posters.
+- Detailed Information: Access detailed information about each film or TV show, including ratings, release dates, and overviews.
+- Smooth Navigation: Seamlessly scroll through the vast library of content with smooth transitions.
+- Responsive Design: Enjoy a consistent user experience across different devices.
 
 ### Table of Contents
 
