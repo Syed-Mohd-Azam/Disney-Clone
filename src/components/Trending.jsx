@@ -13,7 +13,6 @@ const Trending = () => {
   const trendingMovies = async () => {
     const moviesData = await fetch(TRENDING_API);
     const jsonData = await moviesData.json();
-    console.log(jsonData?.results);
     setMovies(jsonData?.results);
   };
   const scrollLeft = (element) => {

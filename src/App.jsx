@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Trending from "./components/Trending";
 import ProductionHouse from "./components/ProductionHouse";
+import Genre from "./components/Genre";
 function App() {
   return (
     <>
@@ -8,6 +9,7 @@ function App() {
         <Header />
         <Trending />
         <ProductionHouse />
+        <Genre />
       </section>
     </>
   );
