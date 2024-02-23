@@ -27,3 +27,19 @@ Film Explorer is built with the following technologies and frameworks:
 - Vite
 - React
 - TMDb API
+
+### Installation
+- Clone the repository :
+ git clone https://github.com/your-username/film-explorer.git
+- Change into the project directory :
+ cd film-explorer
+- Install dependencies :
+npm install
+- To run the project locally :
+npm run dev
+Visit http://localhost:5173 in your browser to explore Film Explorer.
+### API Key
+To enable data fetching from TMDb, obtain an API key:
+- Visit TMDb and create an account.
+- Navigate to your account settings and create a new API application.
+- Copy the API key and replace the placeholder in the project.
