@@ -20,7 +20,7 @@ const Genre = () => {
         {genre?.map(({ id, name }) => (
           <>
             <article key={id} className="py-10">
-              <p className="text-white md:text-4xl text-3xl mb-10 italic ">
+              <p className="text-white md:text-4xl text-2xl sm:text-3xl mb-10 italic ">
                 {name}
               </p>
               <GenrePosters id={id} />
