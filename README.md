@@ -24,6 +24,6 @@ Responsive Design: Enjoy a consistent user experience across different devices.
 ### Technologies Used
 Film Explorer is built with the following technologies and frameworks:
 
-Vite
-React
-TMDb API
+- Vite
+- React
+- TMDb API
