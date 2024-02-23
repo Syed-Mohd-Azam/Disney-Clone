@@ -30,9 +30,9 @@ Film Explorer is built with the following technologies and frameworks:
 
 ### Installation
 - Clone the repository :
- git clone https://github.com/your-username/film-explorer.git
+ git clone https://github.com/Syed-Mohd-Azam/Disney-Clone.git
 - Change into the project directory :
- cd film-explorer
+ cd disney-clone
 - Install dependencies :
 npm install
 - To run the project locally :
