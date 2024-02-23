@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { GENRE_API } from "../utils/constants";
-import GenreVideos from "./GenreVideos";
+import GenrePosters from "./GenrePosters";
 const Genre = () => {
   const [genre, setGenre] = useState([]);
   useEffect(() => {
@@ -23,7 +23,7 @@ const Genre = () => {
               <p className="text-white md:text-4xl text-3xl mb-16 italic">
                 {name}
               </p>
-              <GenreVideos id={id} />
+              <GenrePosters id={id} />
             </article>
           </>
         ))}
