@@ -72,3 +72,7 @@ export const API_KEY = "15f1925c1cc294aea0d2a293f918c656";
 export const TRENDING_API =
   "https://api.themoviedb.org/3/movie/top_rated?api_key=" + API_KEY;
 export const POSTER_PATH_URL = "https://image.tmdb.org/t/p/w500/";
+
+export const GENRE_API =
+  "https://api.themoviedb.org/3/genre/movie/list?language=en&api_key=" +
+  API_KEY;
