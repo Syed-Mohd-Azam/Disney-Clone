@@ -20,7 +20,9 @@ const Genre = () => {
         {genre?.map(({ id, name }) => (
           <>
             <article key={id} className="py-10">
-              <p className="text-white">{name}</p>
+              <p className="text-white md:text-4xl text-3xl mb-16 italic">
+                {name}
+              </p>
               <GenreVideos id={id} />
             </article>
           </>

@@ -19,9 +19,9 @@ const GenreVideos = ({ id }) => {
   }
   return (
     <>
-      <section>
+      <section className="flex flex-row overflow-x-auto gap-4 scrollbar-hide scroll-smooth transition-all ease-in-out duration-300">
         {movies?.map((movie) => (
-          <MoviePoster key={movie?.id} />
+          <MoviePoster key={movie?.id} movie={movie} />
         ))}
       </section>
     </>
