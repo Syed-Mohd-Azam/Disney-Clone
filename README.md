@@ -1,8 +1,47 @@
-# React + Vite
+# Film Explorer - Disney Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+###  Description:
 
-Currently, two official plugins are available:
+Film Explorer is a web application built using Vite and React that allows users to discover information about various films and TV shows. Leveraging the power of The Movie Database (TMDb) API, the application fetches posters, details, and other relevant data, providing an engaging platform for users to explore the world of cinema.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Key Features:
+
+- Dynamic Poster Display: View an extensive collection of film and TV show posters.
+- Detailed Information: Access detailed information about each film or TV show, including ratings, release dates, and overviews.
+- Smooth Navigation: Seamlessly scroll through the vast library of content with smooth transitions.
+- Responsive Design: Enjoy a consistent user experience across different devices.
+
+### Table of Contents
+
+- Demo
+- Technologies Used
+- Installation
+- Usage
+- API Key
+- Contributing
+- License
+
+### Technologies Used
+Film Explorer is built with the following technologies and frameworks:
+
+- Vite
+- React
+- TMDb API
+
+### Installation
+- Clone the repository :
+ git clone https://github.com/Syed-Mohd-Azam/Disney-Clone.git
+- Change into the project directory :
+ cd disney-clone
+- Install dependencies :
+npm install
+- To run the project locally :
+npm run dev
+Visit http://localhost:5173 in your browser to explore Film Explorer.
+### API Key
+To enable data fetching from TMDb, obtain an API key:
+- Visit TMDb and create an account.
+- Navigate to your account settings and create a new API application.
+- Copy the API key and replace the placeholder in the project.
+### Project Link
+Project Link : https://vermillion-tapioca-211c42.netlify.app/
