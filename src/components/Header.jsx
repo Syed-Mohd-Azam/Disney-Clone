@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-import Profile from "../assets/Profile-Image.png";
+import Profile from "../assets/Profile.jpg";
 import Disney from "../assets/Disney+_Image.png";
 import itemsList from "../utils/constants";
 import ItemLarge from "./ItemLarge";
@@ -27,7 +27,7 @@ const Header = () => {
         </article>
         <article className="flex items-center justify-center">
           <img
-            className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] rounded-full"
+            className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] md:w-[60px] md:h-[60px] lg:w-[70px] lg:h-[70px] rounded-full hover:cursor-pointer"
             src={Profile}
             alt="Profile-Image"
           />
