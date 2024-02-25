@@ -29,9 +29,9 @@ const Trending = () => {
   return (
     <>
       <section className=" w-10/12 mx-auto relative my-10 ">
-        <article className="hidden lg:block lg:absolute top-1/2 left-4">
+        <article className="absolute top-1/2 left-4">
           <FaLessThan
-            className="text-white w-10 h-10 p-2 rounded-full hover:cursor-pointer font-extrabold z-50"
+            className="text-white w-8 h-8 lg:w-10 lg:h-10 p-2 rounded-full hover:cursor-pointer font-extrabold z-50"
             style={{ position: "absolute" }}
             onClick={() => scrollLeft(elementRef.current)}
           />
@@ -49,9 +49,9 @@ const Trending = () => {
             />
           ))}
         </section>
-        <article className="hidden lg:block  lg:absolute top-1/2 right-12">
+        <article className="absolute top-1/2 right-12">
           <FaGreaterThan
-            className="text-white w-10 h-10 p-2 rounded-full hover:cursor-pointer z-50 font-extrabold"
+            className="text-white w-8 h-8 lg:w-10 lg:h-10 p-2 rounded-full hover:cursor-pointer z-50 font-extrabold"
             style={{ position: "absolute" }}
             onClick={() => scrollRight(elementRef.current)}
           />
