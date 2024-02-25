@@ -18,10 +18,10 @@ const GenrePosters = ({ id }) => {
     setMovies(json?.results);
   };
   const scrollRight = (element) => {
-    element.scrollLeft += 300;
+    element.scrollLeft += 500;
   };
   const scrollLeft = (element) => {
-    element.scrollLeft -= 300;
+    element.scrollLeft -= 500;
   };
   if (movies?.length === 0) {
     return;
@@ -34,7 +34,7 @@ const GenrePosters = ({ id }) => {
           onClick={() => scrollLeft(myRef.current)}
         />
         <section
-          className="w-11/12 mx-auto flex flex-row overflow-x-auto gap-4 scrollbar-hide scroll-smooth transition-all ease-in-out duration-100  "
+          className="w-11/12 mx-auto flex flex-row overflow-x-auto gap-4 scrollbar-hide scroll-smooth transition-all ease-out duration-100  "
           ref={myRef}
         >
           {movies?.map((movie) => (
