@@ -30,7 +30,7 @@ const GenrePosters = ({ id }) => {
     <>
       <article className="relative">
         <FaLessThan
-          className=" hidden lg:block text-white  w-[30px] h-[30px] absolute top-1/2 left-0 hover:cursor-pointer z-100"
+          className="hidden sm:block  text-white sm:w-[20px] sm:h-[20px]   lg:w-[30px] lg:h-[30px] absolute top-1/2 left-0 hover:cursor-pointer z-100 mr-2"
           onClick={() => scrollLeft(myRef.current)}
         />
         <section
@@ -42,7 +42,7 @@ const GenrePosters = ({ id }) => {
           ))}
         </section>
         <FaGreaterThan
-          className="hidden lg:block text-white  w-[30px] h-[30px] absolute top-1/2 right-0 hover:cursor-pointer z-100"
+          className="hidden sm:block text-white  sm:w-[20px] sm:h-[20px]  lg:w-[30px] lg:h-[30px] absolute top-1/2 right-0 hover:cursor-pointer z-100 ml-2"
           onClick={() => scrollRight(myRef.current)}
         />
       </article>
